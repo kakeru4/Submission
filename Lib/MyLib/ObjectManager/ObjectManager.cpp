@@ -8,11 +8,9 @@ ObjectManager::ObjectManager()
 	, m_pSea(nullptr)
 	, m_pFighter(nullptr)
 {
-	D3DXVECTOR3 chipsPos(0, 0, 0);
-	D3DXVECTOR3 fighterPos(0, 0, 5);
-	m_pChips = new Chips(&chipsPos);
+	m_pChips = new Chips(&D3DXVECTOR3(0, 0, 0));
 	m_pSea = new Sea(&D3DXVECTOR3(0, -2, 0));
-	m_pFighter = new Fighter(&fighterPos);
+	m_pFighter = new Fighter(&D3DXVECTOR3(0, 0, 5));
 
 }
 

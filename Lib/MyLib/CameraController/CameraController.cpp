@@ -81,7 +81,7 @@ void CameraController::Control()
 		m_CameraAngle = m_NormalAngle;
 		m_IsZoom = false;
 	}
-	if (Lib::GetInstance().CheckKey(DIK_2, TWO) == ON)
+	/*if (Lib::GetInstance().CheckKey(DIK_2, TWO) == ON)
 	{
 		m_CameraAngle = m_ZoomAngle;
 		m_IsZoom = true;
@@ -90,7 +90,7 @@ void CameraController::Control()
 	{
 		m_CameraAngle = m_NormalAngle;
 		m_IsZoom = false;
-	}
+	}*/
 	if (Lib::GetInstance().CheckKey(DIK_Q, Q) == ON)
 	{
 		D3DXMatrixRotationY(&matRotation, D3DXToRadian(-m_RotationSpeed));

@@ -170,9 +170,6 @@
     <ClInclude Include="Chips\Chips.h">
       <Filter>SubmissionGame\ObjectManager\Object\Chips</Filter>
     </ClInclude>
-    <ClInclude Include="Object\Object.h">
-      <Filter>SubmissionGame\ObjectManager\Object</Filter>
-    </ClInclude>
     <ClInclude Include="Light\Light.h">
       <Filter>Light</Filter>
     </ClInclude>
@@ -193,6 +190,9 @@
     </ClInclude>
     <ClInclude Include="CollisionManager\CollisionManager.h">
       <Filter>CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Object.h">
+      <Filter>SubmissionGame\ObjectManager\Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

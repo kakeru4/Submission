@@ -21,5 +21,6 @@ private:
 	D3DXVECTOR3				m_LookatPos;            //注視点の座標
 	float                   m_CameraAngle;
 	D3DXMATRIX				m_CameraRotation;
+	float m_RotationSpeed;
 };
 #endif

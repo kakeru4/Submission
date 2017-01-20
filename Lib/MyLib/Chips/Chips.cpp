@@ -9,6 +9,7 @@ Chips::Chips(D3DXVECTOR3* pos)
 	, m_CameraPos({ pos->x, pos->y, pos->z-50 })
 	, m_LookatPos({ pos->x, pos->y, pos->z })
 	, m_CameraAngle(45.f)
+	, m_RotationSpeed(1.0)
 {
 	m_pCollision = new Collision(3.f, Collision::Chips);
 	Lib::GetInstance().LoadXFile(1,"../Resouce//Chips.x");
@@ -23,6 +24,8 @@ Chips::~Chips()
 void Chips::Control()
 {
 	
+	D3DXMATRIX		matRotation; // 回転行列
+
 	if (Lib::GetInstance().CheckKey(DIK_RIGHT, RIGHT) == ON)
 	{
 		m_ObjectPos.x += 1;
@@ -72,6 +75,26 @@ void Chips::Control()
 	{
 		m_CameraPos.z += 10;
 	}
+	if (Lib::GetInstance().CheckKey(DIK_Q, Q) == ON)
+	{
+		D3DXMatrixRotationY(&matRotation, D3DXToRadian(-m_RotationSpeed));
+
+		D3DXVECTOR3 pos = m_CameraPos - m_LookatPos;
+
+		D3DXVec3TransformCoord(&pos, &pos, &matRotation);
+
+		m_CameraPos = pos + m_LookatPos;
+	}
+	if (Lib::GetInstance().CheckKey(DIK_S, S) == ON)
+	{
+		D3DXMatrixRotationY(&matRotation, D3DXToRadian(m_RotationSpeed));
+
+		D3DXVECTOR3 pos = m_CameraPos - m_LookatPos;
+
+		D3DXVec3TransformCoord(&pos, &pos, &matRotation);
+
+		m_CameraPos = pos + m_LookatPos;
+	}
 	if (m_pCollision->InformCollision())
 	{
 	}
@@ -87,7 +110,7 @@ void Chips::Draw()
 	}
 	
 	Lib::GetInstance().DrawXFile(1);
-	m_pCollision->CreatSphere(Lib::GetInstance().GetDevice(),3.f);
+	//m_pCollision->CreatSphere(Lib::GetInstance().GetDevice(),3.f);
 	if (m_pCollision->GetIsHit())
 	{
 		Lib::GetInstance().DrawDebugFont("当たってます", 1400, 10);
