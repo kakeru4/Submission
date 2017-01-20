@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="LIb">
+      <UniqueIdentifier>{ce239fbb-2a1f-4080-a44b-82a2f29d0437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LIb\DX9">
+      <UniqueIdentifier>{5b5fdb57-1de6-4faf-972a-458e32fe9e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{377b6f42-176e-4589-99f8-1688da685f47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubmissionGame">
+      <UniqueIdentifier>{41cb75dc-6be4-4b19-88d8-34580696e98d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubmissionGame\ObjectManager">
+      <UniqueIdentifier>{afb0193b-1618-4e16-9ddb-89c57fd9d698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubmissionGame\ObjectManager\Object">
+      <UniqueIdentifier>{600bb317-18a8-438e-996d-99038af3c8b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubmissionGame\ObjectManager\Object\Chips">
+      <UniqueIdentifier>{d7b62332-1a68-453d-a25b-4a8e485a5537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CameraController">
+      <UniqueIdentifier>{1fb55703-a069-4282-9efd-bdd391179dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubmissionGame\GameScene">
+      <UniqueIdentifier>{0b6dcccd-74f9-403e-8f74-bd4a2b068b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Light">
+      <UniqueIdentifier>{3761ceee-c489-4bca-a40d-6cb6dfab7a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubmissionGame\ObjectManager\Object\Sea">
+      <UniqueIdentifier>{435a23a5-c7f0-4161-9ba7-4f9fb0c22311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubmissionGame\ObjectManager\Object\Fighter">
+      <UniqueIdentifier>{be2dabb8-04e1-40d8-bdc7-3716c93afac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{bdbbd193-535c-48be-98b3-0879fa4b2286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CollisionManager">
+      <UniqueIdentifier>{3ee1016a-ba9d-40c0-b39b-f68175c83308}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lib\Lib.cpp">
+      <Filter>LIb</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\DebugFont.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\GraphicsDevice.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\InputDevice.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\InputKey.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\TextureManager.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\Vertex.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\VertexManager.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\WindowCreator.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\XFile.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\DX9\XFileManager.cpp">
+      <Filter>LIb\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Chips\Chips.cpp">
+      <Filter>SubmissionGame\ObjectManager\Object\Chips</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Object.cpp">
+      <Filter>SubmissionGame\ObjectManager\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Light\Light.cpp">
+      <Filter>Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Sea\Sea.cpp">
+      <Filter>SubmissionGame\ObjectManager\Object\Sea</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController\CameraController.cpp">
+      <Filter>CameraController</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene\GameScene.cpp">
+      <Filter>SubmissionGame\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager\ObjectManager.cpp">
+      <Filter>SubmissionGame\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>SubmissionGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Fighter\Fighter.cpp">
+      <Filter>SubmissionGame\ObjectManager\Object\Fighter</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\Collision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager\CollisionManager.cpp">
+      <Filter>CollisionManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Lib\Lib.h">
+      <Filter>LIb</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\DebugFont.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\GraphicsDevice.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\InputDevice.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\InputKey.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\TextureManager.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\Vertex.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\VertexManager.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\WindowCreator.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\XFile.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\DX9\XFileManager.h">
+      <Filter>LIb\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager\ObjectManager.h">
+      <Filter>SubmissionGame\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Chips\Chips.h">
+      <Filter>SubmissionGame\ObjectManager\Object\Chips</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Object.h">
+      <Filter>SubmissionGame\ObjectManager\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\Light.h">
+      <Filter>Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Sea\Sea.h">
+      <Filter>SubmissionGame\ObjectManager\Object\Sea</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController\CameraController.h">
+      <Filter>CameraController</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene\GameScene.h">
+      <Filter>SubmissionGame\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Fighter\Fighter.h">
+      <Filter>SubmissionGame\ObjectManager\Object\Fighter</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\Collision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager\CollisionManager.h">
+      <Filter>CollisionManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

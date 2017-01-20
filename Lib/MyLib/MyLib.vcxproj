@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA55429D-3DD0-41D6-97EA-A6FFD3903F87}</ProjectGuid>
+    <RootNamespace>MyLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(DXSDK_DIR)Include;C:\Program Files %28x86%29\Microsoft SDK\June 2010\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;C:\Program Files %28x86%29\Microsoft SDK\June 2010\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dinput8.lib;Dsound.lib;dxguid.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CameraController\CameraController.cpp" />
+    <ClCompile Include="Camera\Camera.cpp" />
+    <ClCompile Include="Chips\Chips.cpp" />
+    <ClCompile Include="CollisionManager\CollisionManager.cpp" />
+    <ClCompile Include="Collision\Collision.cpp" />
+    <ClCompile Include="Fighter\Fighter.cpp" />
+    <ClCompile Include="GameScene\GameScene.cpp" />
+    <ClCompile Include="Lib\DX9\DebugFont.cpp" />
+    <ClCompile Include="Lib\DX9\GraphicsDevice.cpp" />
+    <ClCompile Include="Lib\DX9\InputDevice.cpp" />
+    <ClCompile Include="Lib\DX9\InputKey.cpp" />
+    <ClCompile Include="Lib\DX9\TextureManager.cpp" />
+    <ClCompile Include="Lib\DX9\Vertex.cpp" />
+    <ClCompile Include="Lib\DX9\VertexManager.cpp" />
+    <ClCompile Include="Lib\DX9\WindowCreator.cpp" />
+    <ClCompile Include="Lib\DX9\XFile.cpp" />
+    <ClCompile Include="Lib\DX9\XFileManager.cpp" />
+    <ClCompile Include="Lib\Lib.cpp" />
+    <ClCompile Include="Light\Light.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ObjectManager\ObjectManager.cpp" />
+    <ClCompile Include="Object\Object.cpp" />
+    <ClCompile Include="Sea\Sea.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CameraController\CameraController.h" />
+    <ClInclude Include="Camera\Camera.h" />
+    <ClInclude Include="Chips\Chips.h" />
+    <ClInclude Include="CollisionManager\CollisionManager.h" />
+    <ClInclude Include="Collision\Collision.h" />
+    <ClInclude Include="Fighter\Fighter.h" />
+    <ClInclude Include="GameScene\GameScene.h" />
+    <ClInclude Include="Lib\DX9\DebugFont.h" />
+    <ClInclude Include="Lib\DX9\GraphicsDevice.h" />
+    <ClInclude Include="Lib\DX9\InputDevice.h" />
+    <ClInclude Include="Lib\DX9\InputKey.h" />
+    <ClInclude Include="Lib\DX9\TextureManager.h" />
+    <ClInclude Include="Lib\DX9\Vertex.h" />
+    <ClInclude Include="Lib\DX9\VertexManager.h" />
+    <ClInclude Include="Lib\DX9\WindowCreator.h" />
+    <ClInclude Include="Lib\DX9\XFile.h" />
+    <ClInclude Include="Lib\DX9\XFileManager.h" />
+    <ClInclude Include="Lib\Lib.h" />
+    <ClInclude Include="Light\Light.h" />
+    <ClInclude Include="ObjectManager\ObjectManager.h" />
+    <ClInclude Include="Object\Object.h" />
+    <ClInclude Include="Sea\Sea.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
